@@ -10,6 +10,7 @@ import transportation from "../assets/images/transportation.png";
 import carrier from "../assets/images/carrier.png";
 import logoGrey from "../assets/images/logoGrey.png";
 import equipementFac from "../assets/images/equipementFac.png";
+import companyCulture from "../assets/images/companyCulture.png";
 
 //components
 import ButtonOutlined from "../components/ui/ButtonOutlined";
@@ -44,7 +45,9 @@ const Home = () => {
             </div>
           </Section>
         </div>
-        {/* Services section */}
+
+        {/* Services */}
+
         <Section>
           <div className="flex lg:flex-row flex-col gap-7 px-5">
             <div
@@ -88,6 +91,7 @@ const Home = () => {
           </div>
         </Section>
 
+        {/* equipment & facilities */}
         <Section>
           <div className="flex lg:flex-row flex-col lg:gap-7 gap-5 px-5 lg:pt-40 pt-16 lg:pb-40 pb-20">
             <div
@@ -112,6 +116,31 @@ const Home = () => {
             </div>
           </div>
         </Section>
+
+        {/* company culture */}
+        <div
+          className="md:h-[800px] xs:h-[820px] h-[820px] bg-no-repeat bg-cover bg-center lg:pt-0 pt-28 md:-mb-32 -mb-28"
+          style={{ backgroundImage: `url(${companyCulture})` }}
+        >
+          <Section>
+            <div className="flex flex-col items-end ">
+              <div className="w-1/2 lg:px-40 sm:px-28 xs:px-14 px-10 pt-40 space-y-4">
+                <h2 className="text-black lg:text-5xl sm:text-6xl text-5xl font-bold leading-none">
+                  Company Culture
+                </h2>
+                <p className="text-black pt-5 pb-5">
+                  At Freedom Forwarder, our employees are our priority just as
+                  much as the customers are.. Behind the wheels of our trucks
+                  are trustworthy and efficient, ensuring the safety and quality
+                  of our services. A forward-thinking team is key to achieving
+                  the success that we strive for!
+                </p>
+
+                <ButtonFilled>Explore More</ButtonFilled>
+              </div>
+            </div>
+          </Section>
+        </div>
       </PageLayout>
     </>
   );
