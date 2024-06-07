@@ -1,15 +1,11 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
+import { RouterProvider } from "react-router-dom";
+import router from "./Router";
 
 function App() {
   return (
     <>
-      <Router>
-        <Routes>
-          <Route path="/" Component={Home} />
-        </Routes>
-      </Router>
+      <RouterProvider router={router} />
     </>
   );
 }
