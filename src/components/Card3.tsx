@@ -4,10 +4,9 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 type CardProps = {
   img: string;
 };
-const Card1 = ({ img }: CardProps) => {
+const Card3 = ({ img }: CardProps) => {
   return (
-    <div className="flex flex-col bg-white mb-8">
-      <img src={img} alt="Card Image" />
+    <div className="flex flex-col bg-white mb-8 border-secondary border-2">
       <div className="p-7 space-y-5">
         <h2 className="xl:text-4xl lg:text-3xl text-2xl font-bold">
           Maintaining a seamless logistics flow.
@@ -22,9 +21,10 @@ const Card1 = ({ img }: CardProps) => {
         >
           Read <HiOutlineArrowLongRight size={24} />
         </Link>
+        <img src={img} alt="Card Image" />
       </div>
     </div>
   );
 };
 
-export default Card1;
+export default Card3;

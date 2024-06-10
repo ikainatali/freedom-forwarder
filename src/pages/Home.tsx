@@ -10,13 +10,21 @@ import carrier from "../assets/images/carrier.png";
 import logoGrey from "../assets/images/logoGrey.png";
 import equipementFac from "../assets/images/equipementFac.png";
 import companyCulture from "../assets/images/companyCulture.png";
+import driveWith from "../assets/images/driveWith.png";
 
 import cardImage1 from "../assets/images/cardImg1.png";
+import cardImage2 from "../assets/images/cardImg2.png";
+import cardImage3 from "../assets/images/cardImg3.png";
+import cardImage4 from "../assets/images/cardImg4.png";
+import cardImage5 from "../assets/images/cardImg5.png";
+import cardImage6 from "../assets/images/cardImg6.png";
 
 //components
 import ButtonOutlined from "../components/ui/ButtonOutlined";
 import ButtonFilled from "../components/ui/ButtonFilled";
 import Card1 from "../components/Card1";
+import Card2 from "../components/Card2";
+import Card3 from "../components/Card3";
 
 const Home = () => {
   return (
@@ -142,7 +150,7 @@ const Home = () => {
       </div>
 
       {/* news */}
-      <div className="bg-[#f3f3f3]/50">
+      <div className="bg-[#f5f5f5]/50">
         <Section>
           <div className="flex flex-col justify-center lg:gap-7 gap-5 px-5 xl:pt-24 lg:pt-20 pt-12 lg:pb-36 pb-20">
             <div
@@ -153,11 +161,68 @@ const Home = () => {
                 News
               </h2>
             </div>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="xl:columns-3 md:columns-2xs columns-1 gap-8">
               <Card1 img={cardImage1} />
+              <Card3 img={cardImage2} />
+              <Card2 />
+              <Card2 />
+              <Card1 img={cardImage4} />
+              <Card1 img={cardImage5} />
+              <Card3 img={cardImage3} />
+              <Card2 />
+              <Card1 img={cardImage6} />
             </div>
           </div>
         </Section>
+      </div>
+
+      {/* drive with us */}
+      <div className="flex lg:flex-row flex-col md:gap-7 gap-4 px-5">
+        <div className="lg:w-1/3 w-full">
+          <img
+            className="h-full object-cover"
+            src={driveWith}
+            alt="Drive with Us"
+          />
+        </div>
+        <div className="lg:w-2/3 w-full p-8 pt-14 md:space-y-5 space-y-3">
+          <div
+            className="bg-no-repeat bg-contain bg-left pb-4"
+            style={{ backgroundImage: `url(${logoGrey})` }}
+          >
+            <h2 className="xl:text-5xl lg:text-4xl text-3xl font-bold pt-20 md:pl-5">
+              Drive With Us
+            </h2>
+          </div>
+          <p className="md:w-1/2 w-full md:pl-5">
+            Looking to become a member of our team? Check here for more details
+            on career opportunities and how to further them with Freedom
+            Forwarder.
+          </p>
+          <div className="md:pl-5 pt-4">
+            <ButtonFilled>Explore More</ButtonFilled>
+          </div>
+          <div className="flex md:flex-row flex-col md:gap-14 gap-6 md:pl-5 pt-5 justify-start md:items-center items-start">
+            <div className="md:text-center space-y-1">
+              <h2 className="md:text-3xl text-2xl font-black">$75,000</h2>
+              <h3 className="md:text-xl text-lg text-[#C0C0C0]">AVG. PAY</h3>
+            </div>
+            <div className="md:text-center space-y-1">
+              <h2 className="md:text-3xl text-2xl font-black">$87,000+</h2>
+              <h3 className="md:text-xl text-lg text-[#C0C0C0]">
+                TOP 20% EARN
+              </h3>
+            </div>
+            <div className="md:text-center space-y-1">
+              <h2 className="md:text-3xl text-2xl font-black">
+                3-4 DAY
+                <br />
+                WEEKEND
+              </h2>
+              <h3 className="md:text-xl text-lg text-[#C0C0C0]">ENJOY</h3>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
