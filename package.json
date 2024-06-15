@@ -1,7 +1,7 @@
 {
   "name": "project-1",
   "private": true,
-  "homepage": "https://ikainatali.github.io/freedom-forwarder",
+  "homepage": "https://ikainatali.github.io/freedom-forwarder/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
