@@ -5,7 +5,7 @@ import Error from "./pages/Error";
 
 const router = createHashRouter([
   {
-    path: "/",
+    path: "/*",
     element: <Root />,
     errorElement: <Error />,
     children: [
