@@ -177,7 +177,7 @@ const Home = () => {
       </div>
 
       {/* drive with us */}
-      <div className="flex lg:flex-row flex-col md:gap-7 gap-4 px-5">
+      <div className="lg:w-full flex lg:flex-row flex-col md:gap-7 gap-4">
         <div className="lg:w-1/3 w-full">
           <img
             className="h-full object-cover"
@@ -185,24 +185,24 @@ const Home = () => {
             alt="Drive with Us"
           />
         </div>
-        <div className="lg:w-2/3 w-full p-8 pt-14 md:space-y-5 space-y-3">
+        <div className="lg:w-2/3 w-full md:p-8 sm:p-12 p-5 pt-14 md:space-y-5 space-y-3">
           <div
             className="bg-no-repeat bg-contain bg-left pb-4"
             style={{ backgroundImage: `url(${logoGrey})` }}
           >
-            <h2 className="xl:text-5xl lg:text-4xl text-3xl font-bold pt-20 md:pl-5">
+            <h2 className="xl:text-5xl lg:text-4xl text-3xl font-bold pt-20 lg:pl-5">
               Drive With Us
             </h2>
           </div>
-          <p className="md:w-1/2 w-full md:pl-5">
+          <p className="lg:w-1/2 w-full lg:pl-5">
             Looking to become a member of our team? Check here for more details
             on career opportunities and how to further them with Freedom
             Forwarder.
           </p>
-          <div className="md:pl-5 pt-4">
+          <div className="lg:pl-5 pt-4">
             <ButtonFilled>Explore More</ButtonFilled>
           </div>
-          <div className="flex md:flex-row flex-col md:gap-14 gap-6 md:pl-5 pt-5 justify-start md:items-center items-start">
+          <div className="flex md:flex-row flex-col md:gap-14 gap-6 lg:pl-5 pt-5 justify-start md:items-center items-start">
             <div className="md:text-center space-y-1">
               <h2 className="md:text-3xl text-2xl font-black">$75,000</h2>
               <h3 className="md:text-xl text-lg text-[#C0C0C0]">AVG. PAY</h3>
